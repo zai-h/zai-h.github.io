@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        /* 核心卡片容器 */
+        .card {
+            width: 500px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        /* 标题 */
+        .main-title {
+            font-size: 28px;
+            color: #444;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        /* 副标题 */
+        .sub-title {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        /* 核心内容区（副标题下方） */
+        .content-area {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        /* 图片占位区 */
+        .image-box {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 图片自适应填充 */
+        }
+        .image-placeholder-text {
+            font-size: 20px;
+            color: #999;
+        }
+        /* 按钮 */
+        .action-btn {
+            display: block;
+            width: 100%;
+            background-color: #2c82e0;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .action-btn:hover {
+            background-color: #1e70d8;
+        }
+        /* 底部辅助文字 */
+        .footer-info {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 主标题 -->
+        <h1 class="main-title">主题标题</h1>
+        
+        <!-- 副标题 -->
+        <div class="sub-title">副标题</div>
+        
+        <!-- 核心内容区（副标题下方） -->
+        <div class="content-area">
+            这里是副标题下方的核心内容：<br>
+            1. 纯 HTML/CSS 模板：零依赖、加载快，适合极简静态页；<br>
+            2. Tailwind CSS 模板：类名化布局，轻量灵活；<br>
+            3. Bootstrap 模板：组件丰富，新手易上手。
+        </div>
+        
+        <!-- 图片区域（可替换为真实图片） -->
+        <div class="image-box">
+            <!-- 替换为你的图片链接即可显示真实图片 -->
+            <img src="images/1.jpg" alt="展示图片">
+            <span class="image-placeholder-text">图片展示区</span>
+        </div>
+        
+        <!-- 功能按钮 -->
+        <button class="action-btn">参与</button>
+        
+        <!-- 底部文字 -->
+        <div class="footer-info">联系方式：example@mail.com</div>
+    </div>
+</body>
+</html>
